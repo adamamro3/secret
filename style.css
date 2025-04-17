@@ -1,0 +1,170 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0a0a0a;
+  color: #f5f5f5;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 100vh;
+  background: url('https://wallpapercat.com/w/full/2/3/f/191714-2000x1206-desktop-hd-attack-on-titan-tv-series-background-image.jpg') no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  color: #ff4545;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+  text-shadow: 2px 2px 8px #000;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Sections */
+section {
+  padding: 4rem 2rem;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  color: #ff4545;
+  margin-bottom: 2rem;
+}
+
+.about p {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #ddd;
+  text-align: center;
+}
+
+/* Play Button */
+.play-section {
+  text-align: center;
+}
+
+.play-btn {
+  padding: 1rem 2.5rem;
+  font-size: 1.3rem;
+  background-color: #ff1e1e;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #ff1e1e;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.play-btn:hover {
+  background-color: #b30000;
+  box-shadow: 0 0 20px #ff1e1e, 0 0 40px #b30000;
+  transform: scale(1.05);
+}
+
+/* Features */
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.feature-box {
+  flex: 1 1 300px;
+  background: #1a1a1a;
+  border: 1px solid #ff2a2a;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 15px rgba(255, 69, 69, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.feature-box:hover {
+  transform: translateY(-10px);
+}
+
+.feature-box h3 {
+  color: #ff4545;
+  margin-bottom: 0.8rem;
+}
+
+.feature-box p {
+  color: #ccc;
+  line-height: 1.5;
+}
+
+/* Gallery */
+.gallery-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.gallery-images img {
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 69, 69, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.gallery-images img:hover {
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #888;
+  border-top: 1px solid #333;
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  .feature-box {
+    flex: 1 1 100%;
+  }
+}
